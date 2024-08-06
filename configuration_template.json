@@ -1,0 +1,40 @@
+{
+    "db":{
+        "src_db": {
+            "host_addr": "source_sql_server_db_address",
+            "port": 1439,
+            "db_name": "default db name",
+            "username": "db user name",
+            "pwd": "db user password",
+            "TrustServerCertificate": "yes",
+            "driver":"?driver=ODBC+Driver+17+for+SQL+Server"
+        },
+        "dest_db":{
+            "host_addr": "destination_sql_server_db_address",
+            "port": 1439,
+            "db_name": "default db name",
+            "username": "db user name",
+            "pwd": "db user password",
+            "TrustServerCertificate": "yes",
+            "driver":"?driver=ODBC+Driver+17+for+SQL+Server"
+        },
+        "table_list":{
+            "GNSS": true,
+            "GNSSRover": true,
+            "PBIUserManual": false,
+            "SiteMaintenance": false,
+            "SiteType": false,
+            "TMComp": false,
+            "TMCompany": false,
+            "TMField": false,
+            "TMLease": false,
+            "TMLifecycle": false,
+            "TMSite": false,
+            "WindowsTimeZone": false,
+            "WorkType": false
+        },
+        "global_filter_list":[
+            "[STime] >= '2024-08-01 00:00:01'"
+        ]
+    }
+}
